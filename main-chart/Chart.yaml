@@ -4,3 +4,6 @@ version: 0.1.0
 description: Main chart
 appVersion: 1.0.0
 dependencies:
+  - name: sub-chart
+    version: 0.1.0
+    repository: "file://../sub-chart"

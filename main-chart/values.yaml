@@ -1,0 +1,14 @@
+replicaCount: 1
+
+image:
+  repository: httpd
+  tag: "2.4.54"
+  pullPolicy: IfNotPresent
+
+secret:
+  vaultPath: "vault-path-to-main-chart-secret"
+
+sub-chart:
+  replicaCount: 2
+  secret:
+    vaultPath: "vault-path-to-sub-chart-secret"
